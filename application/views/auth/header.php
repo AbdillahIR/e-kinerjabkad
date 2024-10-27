@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>E-Kinerja BKAD</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/admin/') ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,4 +24,21 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<style>
+    .bg-img {
+        background-image: url("<?= base_url('assets/img/patern2.jpg') ?>");
+        background-repeat: repeat;
+        background-size: contain;
+    }
+
+    .card {
+        background: #ffffff32;
+        backdrop-filter: blur(15px);
+        color: white;
+        border-radius: 25px;
+    }
+</style>
+
+<body class="bg-gradient-success bg-img">
+
+</html>

@@ -5,10 +5,10 @@ class Registration extends CI_Controller
     public function index()
     {
         // mendefinisikan aturan 
-        $this->form_validation->set_rules('name', 'nama lengkap', 'required');
-        $this->form_validation->set_rules('no_tlp', 'no telepon', 'required');
-        $this->form_validation->set_rules('nip', 'nip', 'required');
-        $this->form_validation->set_rules('email', 'email', 'required');
+        $this->form_validation->set_rules('name', 'nama lengkap', 'required|min_length[3]');
+        $this->form_validation->set_rules('no_tlp', 'no telepon', 'required|min_length[11]|max_length[13]|numeric|is_unique[users.no_tlp]');
+        $this->form_validation->set_rules('nip', 'nip', 'required|min_length[10]|max_length[16]|numeric');
+        $this->form_validation->set_rules('email', 'email', 'required|is_unique[users.email]');
         $this->form_validation->set_rules('password', 'password', 'required');
 
         // cek validasi

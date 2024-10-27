@@ -56,7 +56,70 @@ $route['translate_uri_dashes'] = FALSE;
 
 // rout halaman login 
 $route['login'] = 'auth/login';
+$route['logout'] = 'auth/login/logout';
+
+// route halaman dashboard
+
+$route['dashboard'] = 'admin/dashboard';
+
+// route halaman pegawai
+// route halaman tambah pegawai
+// route hapus pegawai
+// route edit pegawai
+$route['pegawai'] = 'admin/pegawai';
+$route['tambah-pegawai'] = 'admin/pegawai/create';
+$route['hapus-pegawai/(:num)'] = 'admin/pegawai/delete/$1';
+$route['api-hapus-pegawai/(:num)'] = 'admin/pegawai/delete_api/$1';
+$route['edit-pegawai/(:num)'] = 'admin/pegawai/edit/$1';
+$route['detail-pegawai/(:num)'] = 'admin/pegawai/detail/$1';
+
+// route halaman jabatan
+// route halaman tambah jabatan
+// route hapus jabatan
+$route['jabatan'] = 'admin/jabatan';
+$route['tambah-jabatan'] = 'admin/jabatan/create';
+$route['hapus-jabatan/(:num)'] = 'admin/jabatan/delete/$1';
+$route['edit-jabatan/(:num)'] = 'admin/jabatan/edit/$1';
+$route['detail-jabatan/(:num)'] = 'admin/jabatan/detail/$1';
+
+
+// route halaman permohonan
+// route halaman tambah dokumen
+// route hapus dokumen
+// route edut dokumen
+$route['permohonan'] = 'admin/permohonan/index';
+$route['tambah-permohonan'] = 'admin/permohonan/create';
+$route['hapus-permohonan/(:num)'] = 'admin/permohonan/delete/$1';
+$route['edit-permohonan/(:num)'] = 'admin/permohonan/edit/$1';
+
+// route halaman LPJ
+$route['lpj'] = 'admin/lpj';
+$route['tambah-lpj'] = 'admin/lpj/create';
+$route['hapus-lpj/(:num)'] = 'admin/lpj/delete/$1';
+$route['edit-lpj/(:num)'] = 'admin/lpj/edit/$1';
+
+// route halaman Dokumentasi
+$route['dokumentasi'] = 'admin/dokumentasi';
+$route['tambah-dokumentasi'] = 'admin/dokumentasi/create';
+$route['hapus-dokumentasi/(:num)'] = 'admin/dokumentasi/delete/$1';
+$route['edit-dokumentasi/(:num)'] = 'admin/dokumentasi/edit/$1';
+
 
 // route halaman registrasi
 $route['registration'] = 'auth/registration';
 $route['registration/proses'] = 'auth/registration/proses_register';
+
+
+// route halaman user
+$route['user'] = 'admin/user/index';
+$route['tambah-user'] = 'admin/user/create';
+$route['hapus-user/(:num)'] = 'admin/user/delete/$1';
+$route['api-hapus-user/(:num)'] = 'admin/user/delete_api/$1';
+$route['edit-user/(:num)'] = 'admin/user/edit/$1';
+
+
+// route penilaian
+$route['penilaian'] = 'admin/penilaian/index';
+$route['penilaian-pegawai/(:num)'] = 'admin/penilaian/penilaian_pegawai/$1';
+$route['penilaian-simpan'] = 'admin/penilaian/create';
+$route['penilaian-detail/(:num)'] = 'admin/penilaian/detail/$1';

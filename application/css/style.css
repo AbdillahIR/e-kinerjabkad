@@ -1,0 +1,21 @@
+:root {
+    --primary: #19d248;
+    --bg: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scrollbar-shadow-color: #000000;
+}
+
+body {
+    background-image: url('/assets/img/pesantren.jpg');
+}
